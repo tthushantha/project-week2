@@ -2,9 +2,172 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CICD Week 2</title>
+  <title>LawnCarePro - Professional Lawn Cutting Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #1b5e20;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px;
+      background: white;
+      margin: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2e7d32;
+    }
+    .services, .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #e8f5e9;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    footer {
+      background: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    form button {
+      background: #2e7d32;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #1b5e20;
+    }
+  </style>
 </head>
 <body>
-<p>This is my second version html in CICD</p>
+
+<header>
+  <h1>LawnCarePro</h1>
+  <p>Professional Lawn Cutting & Garden Maintenance</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About Us</a>
+  <a href="#products">Products</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HOME PAGE -->
+<section id="home">
+  <h2>Welcome to LawnCarePro</h2>
+  <p>We provide reliable and affordable lawn cutting and garden care services for residential and commercial properties. Our goal is to keep your lawn healthy, green, and beautiful all year round.</p>
+
+  <div class="services">
+    <div class="card">
+      <h3>Lawn Cutting</h3>
+      <p>Regular and one-time lawn mowing services.</p>
+    </div>
+    <div class="card">
+      <h3>Edge Trimming</h3>
+      <p>Clean and sharp edges for a perfect look.</p>
+    </div>
+    <div class="card">
+      <h3>Garden Cleanup</h3>
+      <p>Remove leaves, weeds, and garden waste.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT US PAGE -->
+<section id="about">
+  <h2>About Us</h2>
+  <p>LawnCarePro is a locally owned lawn care company with over 5 years of experience. We are passionate about delivering quality service and ensuring customer satisfaction.</p>
+
+  <p>Our team uses modern equipment and eco-friendly practices to provide safe and efficient lawn care solutions.</p>
+
+  <h3>Why Choose Us?</h3>
+  <ul>
+    <li>Experienced and friendly staff</li>
+    <li>Affordable pricing</li>
+    <li>On-time service</li>
+    <li>Customer-focused approach</li>
+  </ul>
+</section>
+
+<!-- PRODUCTS PAGE -->
+<section id="products">
+  <h2>Our Products & Packages</h2>
+
+  <div class="products">
+    <div class="card">
+      <h3>Basic Lawn Package</h3>
+      <p>Weekly lawn cutting and edging</p>
+      <p><strong>$25 per visit</strong></p>
+    </div>
+    <div class="card">
+      <h3>Standard Garden Package</h3>
+      <p>Lawn cutting, edging, and weed control</p>
+      <p><strong>$40 per visit</strong></p>
+    </div>
+    <div class="card">
+      <h3>Premium Care Package</h3>
+      <p>Full garden maintenance and cleanup</p>
+      <p><strong>$60 per visit</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT PAGE -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Have questions or need a quote? Contact us today!</p>
+
+  <p><strong>Phone:</strong> +64 21 000 0000</p>
+  <p><strong>Email:</strong> info@lawncarepro.co.nz</p>
+  <p><strong>Address:</strong> 123 Green Street, Auckland, New Zealand</p>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 LawnCarePro. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
